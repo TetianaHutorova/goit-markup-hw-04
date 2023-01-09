@@ -330,8 +330,7 @@ header{
   height: 88px;
   justify-content: center;
   align-items: center;
-  fill:var(--pouring-color);
-
+  fill: var(--pouring-color);
 }
 .customers-link:hover,
 .customers-link:focus{
