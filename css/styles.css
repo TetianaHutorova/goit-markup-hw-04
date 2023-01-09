@@ -2,6 +2,7 @@
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
   --accent-color: #4d5ae5;
+  --hover-color:#404BBF;
   --primary-white-color: #ffffff;
   --first-complementary-color: #f4f4fd;
   --second-complementary-color: #e7e9fc;
@@ -231,6 +232,43 @@ header{
   padding-bottom: 16px;
   text-align: center;
 }
+.media-list{
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  justify-content: space-between;
+  list-style: none;
+}
+.media-link{
+  display: flex;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+/* Клиенты */
+.customers{
+  padding-top: 130px;
+}
+.customers-list{
+  display: flex;
+  padding-left:0;
+    justify-content: space-between;
+  list-style: none;
+
+}
+.customers-link{
+  display: flex;
+  width: 168px;
+  height: 88px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
 /* Кнопки */
 .button {
   display: inline-block;
@@ -251,7 +289,7 @@ header{
 .button:hover,
 .button:focus {
   color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  background-color:var(--hover-color);
   border-color: transparent;
 }
 .main-button {
@@ -261,9 +299,13 @@ header{
   padding: 16px 32px;
 }
 .main-button:hover,
-.main-button:focus {
-  color: var(--accent-color);
-  background-color: var(--first-complementary-color);
+.main-button:focus{
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.media-link:hover,
+.media-link:focus{
+  background-color: var(--hover-color);
 }
 /* Портфолио */
 .portfolio {
